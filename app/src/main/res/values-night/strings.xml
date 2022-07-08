@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup">Signed</string>
+    <string name="already_have_an_account_login">already have an account? Login</string>
+    <string name="create_account">create_account</string>
+    <string name="or">or</string>
+    <string name="sign_in">sign_in</string>
+    <string name="you_are_signed_in">You_are_signed_in</string>
+    <string name="manage_existing_adverts">Manage Existing Adverts</string>
+    <string name="notifications">Notifications</string>
+</resources>

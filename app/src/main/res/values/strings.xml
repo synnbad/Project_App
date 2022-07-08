@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Project App</string>
+    <string name="motto">Internship Recruitment Made Easy</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="already_have_an_account_login">already have an account? Login</string>
+    <string name="create_account">create account</string>
+    <string name="or">or</string>
+    <string name="sign_in">sign in</string>
+    <string name="you_are_signed_in">You are signed in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="recruiter_dashboard">Recruiter Dashboard</string>
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <string name="server_client_id">YOUR_SERVER_CLIENT_ID</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="manage_existing_adverts">Manage Existing Adverts</string>
+    <string name="notifications">Notifications</string>
+    <string name="create_new_adverts">Create New Adverts</string>
+    <string name="First_name">First Name</string>
+    <string name="Last_name">Last Name</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="apply_for_internship">Apply For Internship</string>
+
+    <string name="university">University</string>
+
+    <string name="Company_name">Company Name</string>
+    <string name="field_of_study">Field Of Study</string>
+    <string name="apply">Apply</string>
+    <string name="account_type">Account Type</string>
+    <string name="company_name">Company Name</string>
+    <string name="location">Location</string>
+    <string name="industry_sector">Industry/Sector</string>
+    <string name="recruiter_profile">Recruiter Profile</string>
+    <string name="todo">TODO</string>
+    <string name="student_dashboard">Student Dashboard</string>
+    <string name="kofi_mensah">Kofi Mensah</string>
+    <string name="level">Level</string>
+    <string name="_400">400</string>
+    <string name="it">IT</string>
+    <string name="course">Course</string>
+    <string name="datalink_institute">Datalink Institute</string>
+    <string name="james_kwame">James Kwame</string>
+    <string name="vodafone_ghana">Vodafone Ghana</string>
+    <string name="logout">Logout</string>
+    <string name="accepted_candidates">accepted Candidates</string>
+    <string name="schedules">Schedules</string>
+    <string name="all_aplications">All Aplications</string>
+
+
+    <string-array name="account_types">
+        <item>Choose your Account Type</item>
+        <item>Student</item>
+        <item>Recruiter</item>
+    </string-array>
+
+</resources>
