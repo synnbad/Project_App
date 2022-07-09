@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
+            android:name=".CandidateView"
+            android:exported="false" />
+        <activity
             android:name=".schedule"
             android:exported="false" />
         <activity
@@ -21,25 +24,25 @@
             android:name=".recruiter_notifications"
             android:exported="false" />
         <activity
-            android:name=".Recruiter.Recruiter_profile"
+            android:name=".recruiter.Recruiter_profile"
             android:exported="false" />
         <activity
-            android:name=".Recruiter.AddnewAdverts"
+            android:name=".recruiter.AddnewAdverts"
             android:exported="false" />
         <activity
-            android:name=".Students.ApplyForInternship"
+            android:name=".students.ApplyForInternship"
             android:exported="false" />
         <activity
-            android:name=".Students.inbox"
+            android:name=".students.inbox"
             android:exported="false" />
         <activity
-            android:name=".Students.Notifications"
+            android:name=".students.Notifications"
             android:exported="false" />
         <activity
-            android:name=".Students.StudentProfile"
+            android:name=".students.StudentProfile"
             android:exported="false" />
         <activity
-            android:name=".student_dashboard"
+            android:name=".students.StudentDashboard"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
@@ -54,16 +57,13 @@
             android:name=".ActivitySignIn"
             android:exported="false" />
         <activity
-            android:name=".Recruiter.activity_create_account"
-            android:exported="false" />
-        <activity
             android:name=".RegistrationForm"
             android:exported="false" />
         <activity
-            android:name=".Recruiter.RecruiterDashboard"
+            android:name=".recruiter.RecruiterDashboard"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SignUpActivity"
             android:exported="false" />
 
         <meta-data

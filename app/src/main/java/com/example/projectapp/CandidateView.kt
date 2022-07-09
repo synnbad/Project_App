@@ -1,12 +1,11 @@
-package com.example.projectapp.Students
+package com.example.projectapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.projectapp.R
 
-class StudentProfile : AppCompatActivity() {
+class CandidateView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_student_profile)
+        setContentView(R.layout.activity_candidate_view)
     }
 }

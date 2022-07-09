@@ -1,7 +1,7 @@
-package com.example.projectapp.Students
+package com.example.projectapp.students
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.projectapp.R
 
 class inbox : AppCompatActivity() {

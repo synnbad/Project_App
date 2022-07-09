@@ -1,11 +1,12 @@
-package com.example.projectapp
+package com.example.projectapp.students
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.projectapp.R
 
-class manage_existing_adverts : AppCompatActivity() {
+class StudentProfile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_manage_existing_adverts)
+        setContentView(R.layout.activity_student_profile)
     }
 }

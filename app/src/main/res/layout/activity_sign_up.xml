@@ -10,7 +10,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".SignUpActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -219,18 +219,18 @@
 
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/course_layout"
+                        android:id="@+id/field_of_study"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:hint="@string/course"
-                        app:layout_constraintTop_toBottomOf="@+id/level_layout">
+                        android:hint="Field of Study"
+                        app:layout_constraintTop_toBottomOf="@id/etConfirmPassword">
 
-                        <com.google.android.material.textfield.TextInputEditText
+                        <AutoCompleteTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="text"
-                            android:textColorHint="#616161" />
+                            android:inputType="none" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
 
@@ -273,18 +273,18 @@
 
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/Industry"
+                        android:id="@+id/preffered_field_of_study"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:hint="@string/industry_sector"
-                        app:layout_constraintTop_toBottomOf="@+id/level_layout">
+                        android:hint="Preferred Field of Study"
+                        app:layout_constraintTop_toBottomOf="@id/etConfirmPassword">
 
-                        <com.google.android.material.textfield.TextInputEditText
+                        <AutoCompleteTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="text"
-                            android:textColorHint="#616161" />
+                            android:inputType="none" />
                     </com.google.android.material.textfield.TextInputLayout>
 
 
