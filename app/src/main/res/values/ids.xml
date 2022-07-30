@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="JobTitleTxt" type="id" />
+    <item name="CompanyNameTxt" type="id" />
+    <item name="JobDescriptionTxt" type="id" />
+    <item name="SalaryTxt" type="id" />
+    <item name="JobStartDateTxt" type="id" />
+    <item name="LastDateToApplyTxt" type="id" />
+    <item name="TotolNoOfOpeningsTxt" type="id" />
+    <item name="AdditionalDataTxt" type="id" />
+    <item name="RequiredSkillsTxt" type="id" />
+    <item name="ApplyJobBtn" type="id" />
+    <item name="ResumeLink" type="id" />
+</resources>

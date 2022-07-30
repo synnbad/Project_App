@@ -2,6 +2,7 @@ package com.example.projectapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.util.Patterns
 import android.view.View.GONE
 import android.view.View.VISIBLE
@@ -13,7 +14,7 @@ import androidx.databinding.DataBindingUtil
 import com.example.projectapp.Constants.RECRUITER_TYPE
 import com.example.projectapp.Constants.STUDENT_TYPE
 import com.example.projectapp.databinding.ActivitySignUpBinding
-import com.example.projectapp.dto.User
+import com.example.projectapp.model.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
@@ -42,7 +43,7 @@ class SignUpActivity : AppCompatActivity() {
         databaseReference = database.reference.child("users")
 
         val items = listOf("Student", "Recruiter")
-        val adapter = ArrayAdapter(this, R.layout.account_item, items)
+        val adapter = ArrayAdapter(this, R.layout.applicants_item, items)
 
         val industryItems = listOf(
             "Computer Science / Information Technology",
@@ -52,7 +53,7 @@ class SignUpActivity : AppCompatActivity() {
             "Human Resource"
         )
 
-        val industryAdapter = ArrayAdapter(this, R.layout.account_item, industryItems)
+        val industryAdapter = ArrayAdapter(this, R.layout.applicants_item, industryItems)
 
         (binding.accountType.editText as? AutoCompleteTextView)?.setAdapter(adapter)
 
@@ -90,6 +91,7 @@ class SignUpActivity : AppCompatActivity() {
             val intent = Intent(this, ActivitySignIn::class.java)
             startActivity(intent)
             finish()
+
         }
     }
 
@@ -191,12 +193,15 @@ class SignUpActivity : AppCompatActivity() {
                             finish()
                         } else {
                             auth.currentUser?.delete()?.addOnSuccessListener {
+                                Log.e("SIGNUP","Deleted failed user from database")
+                                Log.e("SIGNUP", task2.exception?.stackTraceToString().toString())
                                 Toast.makeText(this, "Sign Up Failed!", Toast.LENGTH_SHORT).show()
                             }
                         }
                     }
 
             } else {
+                Log.e("SIGNUP",task1.exception?.stackTraceToString().toString())
                 Toast.makeText(this, "Sign Up Failed!", Toast.LENGTH_SHORT).show()
             }
         }

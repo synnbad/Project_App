@@ -4,76 +4,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp"
     tools:context=".recruiter.AddnewAdverts">
 
-
-    <EditText
-        android:id="@+id/CompanyName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Company Name"
-        />
 
     <EditText
         android:id="@+id/JobTitleEditTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Job Title"
+        android:padding="10dp"
+        android:textColor="@color/black"
         android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/JobSalaryEditTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Job Salary"
-        />
+        android:hint="@string/job_salary"
+        android:textColor="@color/black"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
 
-    <EditText
-        android:id="@+id/JobStartDateEditTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Start Date"
-        />
 
     <EditText
         android:id="@+id/JobLastDateEditTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Apply By"
-        />
+        android:textColor="@color/black"
+        android:minHeight="48dp"
+        android:inputType="date"/>
 
-    <EditText
-        android:id="@+id/TotalOpeningsEditTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="No of Openings"
-        />
+
 
     <EditText
         android:id="@+id/AboutJobEditTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="About the Job" />
+        android:textColor="@color/black"
+        android:hint="About the Job"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/SkillsRequiredEditTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Skills Required"
-        />
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/AddationalInfoEditTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Additional Information"
-        />
+        android:textColor="@color/black"
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/AddJobBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Job"
+        android:text="Add Advert"
         android:layout_gravity="center"/>
 
 </LinearLayout>

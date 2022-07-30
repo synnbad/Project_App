@@ -1,12 +1,12 @@
-package com.example.projectapp.students
+package com.example.projectapp.recruiter
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.projectapp.R
 
-class inbox : AppCompatActivity() {
+class schedule : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inbox)
+        setContentView(R.layout.activity_schedule)
     }
 }

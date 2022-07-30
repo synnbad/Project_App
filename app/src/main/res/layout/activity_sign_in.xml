@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:ignore="Autofill, LabelFor"
-    android:padding="20dp">
+    android:padding="20dp"
+    android:background="@drawable/wp5203140">
 
     <TextView
         android:id="@+id/signintext"
@@ -84,5 +85,9 @@
         app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
         app:layout_constraintStart_toStartOf="@+id/btnSignIn"
         app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

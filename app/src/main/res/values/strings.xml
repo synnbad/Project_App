@@ -52,6 +52,10 @@
     <string name="accepted_candidates">accepted Candidates</string>
     <string name="schedules">Schedules</string>
     <string name="all_aplications">All Aplications</string>
+    <string name="update_schedule">Update Schedule</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="job_salary">Job Salary</string>
+    <string name="application_details">Application Details</string>
 
 
     <string-array name="account_types">

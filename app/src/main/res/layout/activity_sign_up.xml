@@ -10,6 +10,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/wp5203140"
         tools:context=".SignUpActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -99,6 +100,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                app:helperText="Password must be at least six characters"
+                app:helperTextTextColor="@color/black"
                 android:hint="@string/password"
                 app:layout_constraintTop_toBottomOf="@+id/phone_layout"
                 app:passwordToggleEnabled="true">

@@ -12,13 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectApp">
         <activity
-            android:name=".CandidateView"
+            android:name=".recruiter.ViewApplicationActivity"
             android:exported="false" />
         <activity
-            android:name=".schedule"
+            android:name=".recruiter.Candidates"
             android:exported="false" />
         <activity
-            android:name=".manage_existing_adverts"
+            android:name=".recruiter.AllApplications"
+            android:exported="false" />
+        <activity
+            android:name=".recruiter.schedule"
             android:exported="false" />
         <activity
             android:name=".recruiter_notifications"
@@ -33,7 +36,7 @@
             android:name=".students.ApplyForInternship"
             android:exported="false" />
         <activity
-            android:name=".students.inbox"
+            android:name=".students.BrowseJobs"
             android:exported="false" />
         <activity
             android:name=".students.Notifications"
@@ -55,9 +58,6 @@
         </activity>
         <activity
             android:name=".ActivitySignIn"
-            android:exported="false" />
-        <activity
-            android:name=".RegistrationForm"
             android:exported="false" />
         <activity
             android:name=".recruiter.RecruiterDashboard"

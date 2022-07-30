@@ -4,13 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.projectapp.ActivitySignIn
 import com.example.projectapp.R
 import com.example.projectapp.databinding.ActivityDashboardBinding
-import com.example.projectapp.recruiter_notifications
-import com.example.projectapp.schedule
+import com.google.firebase.auth.FirebaseAuth
 
 class RecruiterDashboard : AppCompatActivity() {
-
+    private val auth = FirebaseAuth.getInstance()
     private lateinit var binding: ActivityDashboardBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,14 +21,6 @@ class RecruiterDashboard : AppCompatActivity() {
             startActivity(Intent(this, Recruiter_profile::class.java))
         }
 
-        binding.recruiterNotification.setOnClickListener {
-            startActivity(
-                Intent(
-                    this,
-                    recruiter_notifications::class.java
-                )
-            )
-        }
 
         binding.addnewadverts.setOnClickListener {
             startActivity(
@@ -39,10 +31,35 @@ class RecruiterDashboard : AppCompatActivity() {
             )
         }
 
-        binding.schedules.setOnClickListener { startActivity(Intent(this, schedule::class.java)) }
+
+
+
+
+        binding.allapplications.setOnClickListener {
+            startActivity(
+                Intent(this,
+            AllApplications::class.java)
+            )
+        }
+
+
+        binding.addnewadverts.setOnClickListener {
+            startActivity(
+                Intent(this,
+                AddnewAdverts::class.java)
+            )
+        }
+
+        binding.button.setOnClickListener {
+            auth.signOut()
+            startActivity(Intent(this, ActivitySignIn::class.java))
+            finish()
+        }
 
 
     }
+
+
 
 
 }

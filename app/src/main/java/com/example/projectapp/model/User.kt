@@ -1,4 +1,4 @@
-package com.example.projectapp.dto
+package com.example.projectapp.model
 
 data class User(
     var name: String? = null,
